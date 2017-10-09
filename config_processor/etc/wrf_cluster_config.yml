@@ -1,0 +1,126 @@
+default:
+  config: []
+  global_options:
+    n_hours: 2
+    n_omp_per_mpi: 1
+    n_quilt_tasks: 2
+    namelist_ncoord_x: 4
+  instance_options:
+    c4.8xlarge:
+      n_mpi_per_instance: 18
+      n_instances: 1
+    r4.16xlarge:
+      n_mpi_per_instance: 32
+      n_instances: 1
+    r4.8xlarge:
+      n_mpi_per_instance: 16
+      n_instances: 1
+    x1.32xlarge:
+      n_mpi_per_instance: 64
+      n_instances: 1
+  volume_size: 200
+nz4kmN:
+  config:
+  - nz4kmN-NCEP
+  - nz4kmN-ECMWF
+  - nz4kmN-UKMO
+  global_options:
+    n_omp_per_mpi: 1
+    n_quilt_tasks: 2
+    namelist_ncoord_x: 4
+  instance_options:
+    c4.8xlarge:
+      n_hours: 3
+      n_instances: 6
+      n_mpi_per_instance: 18
+    m4.16xlarge:
+      n_hours: 3
+      n_instances: 4
+      n_mpi_per_instance: 32
+    r4.16xlarge:
+      n_hours: 3
+      n_instances: 4
+      n_mpi_per_instance: 32
+    r4.8xlarge:
+      n_hours: 3
+      n_instances: 6
+      n_mpi_per_instance: 16
+    x1.32xlarge:
+      n_hours: 4
+      n_instances: 1
+      n_mpi_per_instance: 64
+  volume_size: 350
+nz4kmN-obsnudge:
+  config:
+  - nz4kmN-NCEP-obsnudge
+  global_options:
+    n_omp_per_mpi: 1
+    n_quilt_tasks: 2
+    namelist_ncoord_x: 4
+  instance_options:
+    c4.8xlarge:
+      n_hours: 2
+      n_instances: 4
+      n_mpi_per_instance: 18
+    m4.16xlarge:
+      n_hours: 2
+      n_instances: 2
+      n_mpi_per_instance: 32
+    r4.16xlarge:
+      n_hours: 2
+      n_instances: 2
+      n_mpi_per_instance: 32
+    r4.8xlarge:
+      n_hours: 2
+      n_instances: 3
+      n_mpi_per_instance: 16
+    x1.32xlarge:
+      n_hours: 2
+      n_instances: 1
+      n_mpi_per_instance: 64
+  volume_size: 300
+nz4kmN-fast:
+  config:
+  - nz4kmN-NCEP
+  - nz4kmN-ECMWF
+  - nz4kmN-UKMO
+  global_options:
+    n_hours: 2
+    n_omp_per_mpi: 1
+    n_quilt_tasks: 2
+    namelist_ncoord_x: 4
+  instance_options:
+    c4.8xlarge:
+      n_instances: 6
+      n_mpi_per_instance: 18
+    r4.16xlarge:
+      n_instances: 5
+      n_mpi_per_instance: 32
+  volume_size: 350
+nz8kmN:
+  config:
+  - nz8kmN-NCEP
+  - nz8kmN-ECMWF
+  - nz8kmN-UKMO
+  global_options:
+    n_hours: 2
+    n_omp_per_mpi: 1
+    n_quilt_tasks: 2
+    namelist_ncoord_x: 4
+  instance_options:
+    c4.8xlarge:
+      n_instances: 2
+      n_mpi_per_instance: 18
+    m4.16xlarge:
+      n_instances: 1
+      n_mpi_per_instance: 32
+    r4.16xlarge:
+      n_instances: 1
+      n_mpi_per_instance: 32
+    r4.8xlarge:
+      n_instances: 2
+      n_mpi_per_instance: 16
+    x1.32xlarge:
+      n_instances: 1
+      n_mpi_per_instance: 64
+volume_size: 200
