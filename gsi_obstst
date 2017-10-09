@@ -1,0 +1,13 @@
+OBS_INPUT::
+!  dfile          dtype       dplat     dsis                 dval    dthin dsfcalc
+   refInGSI       rad_ref     null      rad_ref              1.0     0.0   0.0    
+   prepbufr       ps          null      ps                   1.0     0.0   0.0    
+   prepbufr       t           null      t                    1.0     0.0   0.0    
+   prepbufr       q           null      q                    1.0     0.0   0.0    
+   prepbufr       pw          test      test                 1.2     0.1   0.12   
+   prepbufr       uv          null      uv                   1.0     0.0   0.0    
+   prepbufr       spd         null      spd                  1.0     0.0   0.0    
+   prepbufr       dw          null      dw                   1.0     0.0   0.0    
+   prepbufr       mta_cld     null      mta_cld              1.0     0.0   0.0    
+   prepbufr       gos_ctp     null      gos_ctp              1.0     0.0   0.0    
+::
